@@ -1,0 +1,12 @@
+com\succos\controller\TypeController.class
+com\succos\security\auth\WebSecurityConfig.class
+com\succos\controller\HelloController.class
+com\succos\config\Swagger2.class
+com\succos\security\auth\TokenStoreConfig$JwtTokenConfig.class
+com\succos\security\auth\TokenStoreConfig.class
+com\succos\controller\OauthController.class
+com\succos\security\auth\AuthorizationServerConfig.class
+com\succos\security\auth\SuccosJwtTokenEnhancer.class
+com\succos\BlogApplication.class
+com\succos\security\auth\TokenAuthenticationFilter.class
+com\succos\controller\UserController.class

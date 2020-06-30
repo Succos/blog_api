@@ -1,0 +1,14 @@
+com\succos\pojo\AdminUser.class
+com\succos\pojo\AdminRole.class
+com\succos\pojo\AdminPermission.class
+com\succos\pojo\AdminUserRole.class
+com\succos\pojo\AdminRolePermission.class
+com\succos\pojo\BlogType.class
+com\succos\pojo\BlogAbout.class
+com\succos\pojo\BlogUser.class
+com\succos\pojo\BlogLog.class
+com\succos\pojo\BlogCollection.class
+com\succos\pojo\BlogLink.class
+com\succos\pojo\BlogBlog.class
+com\succos\pojo\BlogComment.class
+com\succos\pojo\BlogMusic.class

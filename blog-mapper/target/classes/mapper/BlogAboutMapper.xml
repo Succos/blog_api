@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.succos.mapper.BlogAboutMapper" >
+  <resultMap id="BaseResultMap" type="com.succos.pojo.BlogAbout" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="about_id" property="aboutId" jdbcType="VARCHAR" />
+    <result column="about_title" property="aboutTitle" jdbcType="VARCHAR" />
+    <result column="about_read" property="aboutRead" jdbcType="INTEGER" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <result column="about_content" property="aboutContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,15 @@
+com\succos\mapper\AdminRoleMapper.class
+com\succos\mapper\BlogMusicMapper.class
+com\succos\mapper\AdminPermissionMapper.class
+com\succos\mapper\BlogBlogMapper.class
+com\succos\my\mapper\MyMapper.class
+com\succos\mapper\BlogAboutMapper.class
+com\succos\mapper\BlogTypeMapper.class
+com\succos\mapper\AdminUserRoleMapper.class
+com\succos\mapper\AdminUserMapper.class
+com\succos\mapper\BlogCollectionMapper.class
+com\succos\mapper\BlogLinkMapper.class
+com\succos\mapper\BlogUserMapper.class
+com\succos\mapper\BlogCommentMapper.class
+com\succos\mapper\AdminRolePermissionMapper.class
+com\succos\mapper\BlogLogMapper.class

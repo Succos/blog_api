@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.succos.mapper.BlogLogMapper" >
+  <resultMap id="BaseResultMap" type="com.succos.pojo.BlogLog" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="log_id" property="logId" jdbcType="INTEGER" />
+    <result column="log_url" property="logUrl" jdbcType="VARCHAR" />
+    <result column="log_params" property="logParams" jdbcType="VARCHAR" />
+    <result column="log_status" property="logStatus" jdbcType="INTEGER" />
+    <result column="log_method" property="logMethod" jdbcType="VARCHAR" />
+    <result column="log_time" property="logTime" jdbcType="BIGINT" />
+    <result column="log_ip" property="logIp" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="log_message" property="logMessage" jdbcType="LONGVARCHAR" />
+    <result column="log_result" property="logResult" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

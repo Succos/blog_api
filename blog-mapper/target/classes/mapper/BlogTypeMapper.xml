@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.succos.mapper.BlogTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.succos.pojo.BlogType" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="type_id" property="typeId" jdbcType="VARCHAR" />
+    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
+    <result column="type_blog_count" property="typeBlogCount" jdbcType="INTEGER" />
+    <result column="enable" property="enable" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="getByName" resultMap="BaseResultMap">
+    select type_id,type_name,type_blog_count from blog_type where deleted = 0 and type_name = #{value}
+  </select>
+  <select id="getTypeById" resultMap="BaseResultMap" parameterType="string">
+    select type_id,type_name,type_blog_count from blog_type where deleted = 0 and type_id = #{value}
+  </select>
+  <update id="enableById">
+--     select type_id,type_name,type_blog_count from blog_type where deleted = 0 and type_name = #{value}
+
+    update
+  </update>
+
+    <update id="update" parameterType="com.succos.pojo.BlogType">
+      update blog_type
+      <set>
+        <if test="typeName!=null and typeName!=''">
+          type_name = #{typeName},
+        </if>
+        <if test="typeBlogCount!=null and typeBlogCount!=''">
+          type_blog_count = #{typeBlogCount},
+        </if>
+        <if test="enable!=null">
+          enable = #{enable},
+        </if>
+        <if test="deleted!=null">
+          deleted = #{deleted},
+        </if>
+      </set>
+      where type_id = #{typeId}
+    </update>
+
+<!--  <select id="insert" parameterType="com.succos.pojo.BlogType">-->
+<!--    insert into blog_type(type_name) values(-->
+<!--    #{typeName}-->
+<!--    )-->
+<!--  </select>-->
+
+</mapper>
